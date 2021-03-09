@@ -1,6 +1,7 @@
 import React from 'react'
 import { Helmet } from "react-helmet"
 import '../styles/_reset.scss'
+import '../styles/_base.scss'
 
 const Layout = ( {children, title} ) => {
     return (
@@ -8,7 +9,9 @@ const Layout = ( {children, title} ) => {
             <Helmet>
                 <title>{title}</title>
             </Helmet>
-            {children}
+            <div id="content">
+                {children}
+            </div>
         </main>
     )
 }

@@ -1,1 +1,36 @@
 @use 'variables' as *;
+
+body {
+    background:url('../images/gfx/bg.svg');
+    background-size:auto;
+    background-position: center center;
+}
+
+#content {
+    display:flex;
+    height:100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    h1 {
+        font-family:'Playfair Display', serif;
+        font-size:10vmin;
+        font-weight: bold;
+        color:$sand;
+        letter-spacing: 5px;
+        text-align:center;
+    }
+
+    .sm-icons {
+        svg {
+            font-size:2rem;
+            margin-right:.5em;
+            color:$sand;
+
+            &:last-child {
+                margin-right:0px;
+            }
+        }
+    }
+}
