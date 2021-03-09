@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: "maestudy",
+    siteUrl: `https://maestudy.com`,
   },
   plugins: [
     "gatsby-plugin-sass",
