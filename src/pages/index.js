@@ -8,7 +8,7 @@ const IndexPage = () => {
   return (
     <Layout title="Homepage">
       <h1> Coming Soon </h1>
-      <StaticImage src="../images/gfx/maestudy-logo.png" alt="Mae Study Logo" width={400} placeholder="BLURRED" />
+      <StaticImage src="../images/gfx/maestudy-logo.png" alt="Mae Study Logo" imgClassName="logo" width={400} placeholder="BLURRED" />
       <Socialmedia />
     </Layout>
   )

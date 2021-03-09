@@ -5,9 +5,15 @@ import { MdEmail } from 'react-icons/md'
 const Socialmedia = () => {
     return (
         <div className="sm-icons">
-            <AiFillInstagram />
-            <AiFillYoutube />
-            <MdEmail />
+            <a href="mailto:hello@maestudy">
+                <MdEmail />
+            </a>
+            <a href="https://instagram.com/maestudy">
+                <AiFillInstagram />
+            </a>
+            <a href="https://twitter.com/maestudy">
+                <AiFillYoutube />
+            </a>
         </div>
     )
 }
