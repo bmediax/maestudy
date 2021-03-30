@@ -1,0 +1,22 @@
+@use '../../../styles/variables' as *;
+
+.linkHeader {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:100px;
+    width:100%;
+    background:#FFF;
+
+    .profilePic {
+        flex:1;
+        background:rgba(green, .4);
+        height:100px;
+    }
+    
+    .socialMedia {
+        flex:3;
+        background:rgba(purple, .4);
+        height:100px;
+    }
+}
