@@ -1,12 +1,6 @@
-@use 'variables' as *;
+@use './variables' as *;
 
-body {
-    background:url('../images/gfx/bg.svg');
-    background-size:auto;
-    background-position: center center;
-}
-
-#content {
+.comingsoon {
     display:flex;
     height:100vh;
     justify-content: center;
@@ -27,7 +21,7 @@ body {
         pointer-events: none !important;
     }
 
-    .sm-icons {
+    .smicons {
         a {
             margin-right:1.5em;
             border-radius:20%;
