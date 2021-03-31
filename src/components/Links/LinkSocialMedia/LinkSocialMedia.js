@@ -2,21 +2,10 @@ import React, { useContext } from 'react'
 import { motion } from 'framer-motion'
 import * as linkSocialStyles from './LinkSocialMedia.module.scss'
 import { SocialMediaContext } from '../../../data/context/SocialMediaContext'
+import { buttonTopScaleVariant } from '../../../data/variants/buttonVariants'
 
 const LinkSocialMedia = () => {
     const [ socialMedia ] = useContext(SocialMediaContext)
-    const buttonVariants = {
-        hidden: {
-            y:100,
-            scale: 0,
-            opacity:0
-        },
-        visible: {
-            y:0,
-            scale: 1,
-            opacity:1
-        }
-    }
     return (
         <div className={linkSocialStyles.socialMedia}>
             {socialMedia.map(socials => (
@@ -26,7 +15,7 @@ const LinkSocialMedia = () => {
                 key={socials.id}
                 initial='hidden'
                 animate='visible'
-                variants={buttonVariants}
+                variants={buttonTopScaleVariant}
                 transition={{ type: 'spring', damping:10, stiffness:80 }}
                 >
                     {socials.icon}
