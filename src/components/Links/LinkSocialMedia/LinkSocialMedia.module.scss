@@ -15,12 +15,18 @@
     align-items: center;
     justify-content: center;
     background:$crimsonBrown;
-    height:45px;
-    width:45px;
+    height:50px;
+    width:50px;
     border-radius:50%;
     font-size:22px;
     color:$nude;
     margin-right:5%;
+    transition: background 200ms ease-out;
+
+    &:hover {
+        background:$brown;
+        color:#FFF;
+    }
 
     &:last-child {
         margin-right:0px;

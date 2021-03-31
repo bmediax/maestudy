@@ -1,24 +1,37 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { motion } from 'framer-motion'
 import * as linkSocialStyles from './LinkSocialMedia.module.scss'
-import { HiOutlineMail } from 'react-icons/hi'
-import { AiOutlineInstagram, AiFillYoutube } from 'react-icons/ai'
-import { FaPinterest } from 'react-icons/fa'
+import { SocialMediaContext } from '../../../data/context/SocialMediaContext'
 
 const LinkSocialMedia = () => {
+    const [ socialMedia ] = useContext(SocialMediaContext)
+    const buttonVariants = {
+        hidden: {
+            y:100,
+            scale: 0,
+            opacity:0
+        },
+        visible: {
+            y:0,
+            scale: 1,
+            opacity:1
+        }
+    }
     return (
         <div className={linkSocialStyles.socialMedia}>
-            <a href="google.com" className={linkSocialStyles.socials}>
-                <HiOutlineMail />
-            </a>
-            <a href="google.com" className={linkSocialStyles.socials}>
-                <AiOutlineInstagram />
-            </a>
-            <a href="google.com" className={linkSocialStyles.socials}>
-                <AiFillYoutube />
-            </a>
-            <a href="google.com" className={linkSocialStyles.socials}>
-                <FaPinterest />
-            </a>
+            {socialMedia.map(socials => (
+                <motion.a href={socials.link} 
+                className={linkSocialStyles.socials} 
+                whileTap={{ scale:.9 }} 
+                key={socials.id}
+                initial='hidden'
+                animate='visible'
+                variants={buttonVariants}
+                transition={{ type: 'spring', damping:10, stiffness:80 }}
+                >
+                    {socials.icon}
+                </motion.a>
+            ))}
         </div>
     )
 }
