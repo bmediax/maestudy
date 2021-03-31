@@ -7,10 +7,18 @@ import { FaPinterest } from 'react-icons/fa'
 const LinkSocialMedia = () => {
     return (
         <div className={linkSocialStyles.socialMedia}>
-            <span className={linkSocialStyles.socials}><HiOutlineMail /></span>
-            <span className={linkSocialStyles.socials}><AiOutlineInstagram /></span>
-            <span className={linkSocialStyles.socials}><AiFillYoutube /></span>
-            <span className={linkSocialStyles.socials}><FaPinterest /></span>
+            <a href="google.com" className={linkSocialStyles.socials}>
+                <HiOutlineMail />
+            </a>
+            <a href="google.com" className={linkSocialStyles.socials}>
+                <AiOutlineInstagram />
+            </a>
+            <a href="google.com" className={linkSocialStyles.socials}>
+                <AiFillYoutube />
+            </a>
+            <a href="google.com" className={linkSocialStyles.socials}>
+                <FaPinterest />
+            </a>
         </div>
     )
 }
