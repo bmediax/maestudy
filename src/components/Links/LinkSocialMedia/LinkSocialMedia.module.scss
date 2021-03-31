@@ -15,17 +15,18 @@
     align-items: center;
     justify-content: center;
     background:$crimsonBrown;
-    height:50px;
-    width:50px;
+    height:$smol-btn;
+    width:$smol-btn;
     border-radius:50%;
     font-size:22px;
     color:$nude;
     margin-right:5%;
-    transition: background 200ms ease-out;
+    transition: background 200ms ease-out, box-shadow 250ms ease-out;
 
     &:hover {
         background:$brown;
         color:#FFF;
+        @include objectMiniShadow('minimal')
     }
 
     &:last-child {
