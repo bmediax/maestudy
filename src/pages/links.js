@@ -3,6 +3,7 @@ import Layout from '../layout'
 import LinkHeader from '../components/Links/LinkHeader/LinkHeader'
 import LinkLatestVideo from '../components/Links/LinkLatestVideo'
 import LinkModule from "../components/Links/LinkModule.js"
+import LinkBtmBannerModule from '../components/Links/LinkBtmBannerModule'
 
 // markup
 const Links = () => {
@@ -11,6 +12,7 @@ const Links = () => {
       <LinkHeader />
       <LinkLatestVideo />
       <LinkModule />
+      <LinkBtmBannerModule />
     </Layout>
   )
 }

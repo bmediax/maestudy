@@ -7,11 +7,13 @@
     color:#FFF;
     background:$sand;
     font-size:1.1rem;
-    font-family:sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
     text-align:center;
     text-decoration:none;
     @include objectRadius('rounded-btn');
     margin-bottom:15px;
+    margin-bottom:4%;
     transition: background 200ms linear;
 
     &:hover {
