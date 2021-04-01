@@ -1,0 +1,12 @@
+@use '../../../styles/variables' as *;
+
+.latestVideo {
+    display:block;
+    height:187px;
+    width:100%;
+
+    img {
+        width:100%;
+        @include objectRadius('rounded');
+    }
+}

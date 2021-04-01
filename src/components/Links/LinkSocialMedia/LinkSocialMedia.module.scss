@@ -12,12 +12,8 @@
     align-items: center;
     justify-content: center;
     background:$crimsonBrown;
-    // min-height:$smol-btn;
-    // min-width:$smol-btn;
-    // height:$smol-btn;
-    // width:$smol-btn;
     padding:10px;
-    border-radius:100%;
+    @include objectRadius('circular');
     font-size:22px;
     color:$nude;
     margin-right:5%;

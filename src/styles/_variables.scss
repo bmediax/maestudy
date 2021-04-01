@@ -22,3 +22,12 @@ $smol-btn: 50px;
         box-shadow:0px 10px 20px rgba(0, 0, 0, 0.2);
     }
 }
+
+@mixin objectRadius($type) {
+    @if $type == 'rounded' {
+        border-radius:20px;
+    }
+    @else if $type == 'circular' {
+        border-radius:100%;
+    }
+}

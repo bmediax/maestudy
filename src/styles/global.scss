@@ -4,10 +4,19 @@ body {
     background:url('../images/gfx/bg.svg');
     background-size:cover;
     background-position: center center;
+    height:100vh;
 }
 
 #links {
     padding:5% 5%;
-    max-width:1200px;
+    max-width:750px;
     margin:auto;
+}
+
+.linksSection {
+    margin-bottom: 5%;
+
+    &:last-child {
+        margin-bottom:0px;
+    }
 }
