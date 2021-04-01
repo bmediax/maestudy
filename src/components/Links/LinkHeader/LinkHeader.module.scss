@@ -3,14 +3,17 @@
 .linkHeader {
     display:flex;
     justify-content: center;
-    align-items: center;
-    height:78px;
-    width:100%;
+    align-items: flex-end;
+    width:90%;
+    max-width:750px;
+    margin:auto;
+    padding:5% 5% 0 5%;
     background:#FFF;
 
     .profilePic {
         flex:1;
-        background:rgba(green, .4);
-        height:78px;
+        display:flex;
+        justify-content: center;
+        align-items: flex-start;
     }
 }

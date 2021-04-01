@@ -1,12 +1,10 @@
 @use '../../../styles/variables' as *;
 
 .socialMedia {
-    flex:3;
+    flex:2;
     display:flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: flex-end;
-    background:rgba(purple, .4);
-    height:78px;
 }
 
 .socials {
