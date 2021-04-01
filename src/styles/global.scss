@@ -1,5 +1,9 @@
 @use 'variables' as *;
 
+html {
+    background:$nude;
+}
+
 body {
     background:url('../images/gfx/bg.svg');
     background-size:cover;
