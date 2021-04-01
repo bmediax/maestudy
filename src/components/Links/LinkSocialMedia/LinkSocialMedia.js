@@ -5,7 +5,7 @@ import { SocialMediaContext } from '../../../data/context/SocialMediaContext'
 import { buttonTopScaleVariant } from '../../../data/variants/buttonVariants'
 
 const LinkSocialMedia = () => {
-    const [ socialMedia ] = useContext(SocialMediaContext)
+    const socialMedia = useContext(SocialMediaContext)
     return (
         <div className={linkSocialStyles.socialMedia}>
             {socialMedia.map(socials => (
