@@ -10,3 +10,14 @@ export const buttonTopScaleVariant = {
         opacity:1
     }
 }
+
+export const bottonTopVariant = {
+    hidden: {
+        y:100,
+        opacity:0
+    },
+    visible: {
+        y:0,
+        opacity:1
+    }
+}
