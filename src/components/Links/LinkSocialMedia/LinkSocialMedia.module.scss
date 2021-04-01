@@ -13,16 +13,19 @@
     align-items: center;
     justify-content: center;
     background:$crimsonBrown;
-    height:$smol-btn;
-    width:$smol-btn;
-    border-radius:50%;
+    // min-height:$smol-btn;
+    // min-width:$smol-btn;
+    // height:$smol-btn;
+    // width:$smol-btn;
+    padding:10px;
+    border-radius:100%;
     font-size:22px;
     color:$nude;
     margin-right:5%;
-    transition: background 200ms ease-out, box-shadow 250ms ease-out;
+    transition: background 500ms ease-out, box-shadow 250ms ease-out;
 
     &:hover {
-        background:$brown;
+        background:$forest;
         color:#FFF;
         @include objectMiniShadow('minimal')
     }
