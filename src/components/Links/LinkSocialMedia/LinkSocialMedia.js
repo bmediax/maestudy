@@ -5,10 +5,10 @@ import { SocialMediaContext } from '../../../data/context/SocialMediaContext'
 import { buttonTopScaleVariant } from '../../../data/variants/buttonVariants'
 
 const LinkSocialMedia = () => {
-    const socialMedia = useContext(SocialMediaContext)
+    const value = useContext(SocialMediaContext)
     return (
         <div className={linkSocialStyles.socialMedia}>
-            {socialMedia.map(socials => (
+            {value.map(socials => (
                 <motion.a href={socials.link} 
                 className={linkSocialStyles.socials} 
                 whileTap={{ scale:.9 }}
