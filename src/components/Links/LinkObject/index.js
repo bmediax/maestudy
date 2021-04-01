@@ -1,10 +1,9 @@
 import React from 'react'
+import * as linkObjectStyle from './LinkObject.module.scss'
 
-const LinkObject = () => {
+const LinkObject = ({title}) => {
     return (
-        <div>
-            <a href="https://google.com"> Amazon Gift Card Giveaway </a>
-        </div>
+        <a href="https://google.com" className={linkObjectStyle.linkBtn}> {title} </a>
     )
 }
 

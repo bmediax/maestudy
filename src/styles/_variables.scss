@@ -27,6 +27,15 @@ $smol-btn: 50px;
     @if $type == 'rounded' {
         border-radius:20px;
     }
+
+    @else if $type == 'rounded-btn' {
+        border-radius:30px;
+    }
+
+    @else if $type == 'smooth' {
+        border-radius:50%;
+    }
+
     @else if $type == 'circular' {
         border-radius:100%;
     }
