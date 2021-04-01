@@ -1,10 +1,9 @@
 @use '../../../styles/variables' as *;
 
 .socialMedia {
-    flex:2;
     display:flex;
-    justify-content: flex-end;
-    align-items: flex-end;
+    justify-content: center;
+    align-items: center;
 }
 
 .socials {

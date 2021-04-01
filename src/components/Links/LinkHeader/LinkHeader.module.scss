@@ -4,16 +4,22 @@
     display:flex;
     justify-content: center;
     align-items: flex-end;
-    width:90%;
+    // width:95%;
     max-width:750px;
     margin:auto;
-    padding:5% 5% 0 5%;
-    background:#FFF;
 
     .profilePic {
         flex:1;
         display:flex;
-        justify-content: center;
-        align-items: flex-start;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .profileSide {
+        flex:2;
+
+        img {
+            width:100%;
+        }
     }
 }
