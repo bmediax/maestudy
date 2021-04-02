@@ -1,7 +1,8 @@
 export const linksData = [
     {
-        title: 'View my first Instagram Post!',
-        link: 'https://google.com',
+        title: 'Subscribe to my Youtube Channel!',
+        link: 'https://www.youtube.com/channel/UCbtfEYwfzigTidiqd6XDBcQ',
+        isPin: true,
         id: 1
     }
 ]
