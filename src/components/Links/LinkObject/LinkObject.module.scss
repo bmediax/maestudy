@@ -57,5 +57,9 @@
         font-size:1.5rem;
         color:$quirk;
         transition: background linear 250ms, color linear 250ms;
+
+        @include responsive('Mobile') {
+            background:red !important;
+        }
     }
 }
