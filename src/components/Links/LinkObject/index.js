@@ -13,7 +13,8 @@ const LinkObject = ({title, link, icon}) => {
         variants={bottonTopVariant}>
             { icon && 
             <span className={linkObjectStyle.linkIcon}>
-                <a href="#">{icon}</a>
+                <a href={link}>{icon}</a>
+                {/* style={{ color : isPinned ? nudeColor : null }} */}
             </span>
             }
             <motion.a href={link} 

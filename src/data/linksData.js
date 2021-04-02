@@ -1,6 +1,6 @@
 import React from 'react'
-import { AiFillPushpin as Pin }from 'react-icons/ai'
-import { CgShoppingBag as Shop } from 'react-icons/cg'
+import { AiFillPushpin as Pin } from 'react-icons/ai'
+// import { CgShoppingBag as Shop } from 'react-icons/cg'
 
 // Type icon variety
 // - Pin
@@ -17,17 +17,10 @@ export const linksData = [
         id: 1
     },
     {
-        title: 'Subscribe to my YT Channel!',
+        title: 'Subscribe Now!',
         link: 'https://www.youtube.com/channel/UCbtfEYwfzigTidiqd6XDBcQ',
-        isPinned: true,
-        icon: <Shop />,
+        isPinned: false,
+        icon: null,
         id: 2
     },
-    {
-        title: 'Subscribe to my YT Channel!',
-        link: 'https://www.youtube.com/channel/UCbtfEYwfzigTidiqd6XDBcQ',
-        isPinned: true,
-        icon: null,
-        id: 3
-    }
 ]

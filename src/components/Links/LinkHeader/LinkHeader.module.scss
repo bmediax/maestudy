@@ -3,7 +3,7 @@
 .linkHeader {
     display:flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
     // width:95%;
     margin:auto;
 
@@ -12,6 +12,7 @@
         display:flex;
         justify-content: flex-start;
         align-items: center;
+        max-width:200px;
     }
 
     .profileSide {

@@ -18,6 +18,10 @@ $brown:         #A16346;
 $forest:        #1E5062;
 $black:         #1A1423;
 
+:export {
+    nude: $nude;
+}
+
 // Sizes
 // -- Button Sizes
 $smol-btn: 50px;
@@ -47,5 +51,24 @@ $smol-btn: 50px;
 
     @else if $type == 'circular' {
         border-radius:100%;
+    }
+}
+
+@mixin responsive($size) {
+    @if $size == 'Desktop' {
+        @media (max-width:1200px) {
+            @content;
+        }
+    }
+    @else if $size == 'Tablet' {
+        @media (max-width:750px) {
+            @content;
+        }
+    }
+
+    @else if $size == 'Mobile' {
+        @media (max-width:500px) {
+            @content;
+        }
     }
 }

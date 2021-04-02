@@ -8,8 +8,10 @@ const LinkModule = () => {
     return (
         <LinksSection>
             <div>
-                {linksData.map(links => (
-                    <LinkObject title={links.title} key={links.id} link={links.link} icon={links.icon}/>
+                {linksData
+                .sort((pin, nopin) => nopin.isPinned - pin.isPinned)
+                .map(links => (
+                    <LinkObject title={links.title} key={links.id} link={links.link} icon={links.icon} />
                 ))}
             </div>
         </LinksSection>
