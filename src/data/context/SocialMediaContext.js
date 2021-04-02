@@ -34,7 +34,7 @@ export const SocialMediaProvider = ({children}) => {
     ]
 
     return (
-        <SocialMediaContext.Provider value={socialMedia}>
+        <SocialMediaContext.Provider value={{socialMedia}}>
             {children}
         </SocialMediaContext.Provider>
     )
