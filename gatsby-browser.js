@@ -1,8 +1,9 @@
 import React from 'react'
-import { SocialMediaProvider } from './src/data/context/SocialMediaContext'
+import { SocialMediaContext } from './src/data/context/SocialMediaContext'
+import { socialMedia } from './src/data/socialmediaData'
 
 export const wrapRootElement = ({element}) => (
-    <SocialMediaProvider>
+    <SocialMediaContext.Provider value={socialMedia}>
         {element}
-    </SocialMediaProvider>
+    </SocialMediaContext.Provider>
 )
