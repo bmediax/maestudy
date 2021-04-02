@@ -3,9 +3,9 @@ import { motion } from 'framer-motion'
 import * as linkObjectStyle from './LinkObject.module.scss'
 import { bottonTopVariant } from '../../../data/variants/buttonVariants'
 
-const LinkObject = ({title}) => {
+const LinkObject = ({title, link}) => {
     return (
-        <motion.a href="https://google.com" 
+        <motion.a href={link} 
             className={linkObjectStyle.linkBtn} 
             initial={'hidden'} 
             animate={'visible'}

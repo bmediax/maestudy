@@ -1,5 +1,6 @@
 import React from 'react'
-import { AiOutlineInstagram, AiFillYoutube } from 'react-icons/ai'
+import { AiOutlineInstagram } from 'react-icons/ai'
+// AiFillYoutube
 import { FaPinterest } from 'react-icons/fa'
 import { HiMail } from 'react-icons/hi'
 
@@ -16,12 +17,12 @@ export const socialMedia = [
         icon: <AiOutlineInstagram />,
         id: 2
     },
-    {
-        name: 'Youtube',
-        link: 'https://youtube.com/maestudy',
-        icon: <AiFillYoutube />,
-        id: 3
-    },
+    // {
+    //     name: 'Youtube',
+    //     link: 'https://youtube.com/maestudy',
+    //     icon: <AiFillYoutube />,
+    //     id: 3
+    // },
     {
         name: 'Pinterest',
         link: 'https://pinterest.com/maestudy',

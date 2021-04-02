@@ -9,7 +9,7 @@ const LinkModule = () => {
         <LinksSection>
             <div className={linkModuleStyle.linkModule}>
                 {linksData.map(links => (
-                    <LinkObject title={links.title} key={links.id} />
+                    <LinkObject title={links.title} key={links.id} link={links.link} />
                 ))}
             </div>
         </LinksSection>
