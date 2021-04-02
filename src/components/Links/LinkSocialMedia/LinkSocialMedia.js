@@ -5,14 +5,14 @@ import { SocialMediaContext } from '../../../data/context/SocialMediaContext'
 import { buttonTopScaleVariant } from '../../../data/variants/buttonVariants'
 
 const LinkSocialMedia = () => {
-    const socialMedia = useContext(SocialMediaContext)
+    const [socialMedia] = useContext(SocialMediaContext)
     return (
         <div className={linkSocialStyles.socialMedia}>
             {socialMedia.map(socials => (
                 <motion.a href={socials.link} 
+                key={socials.id}
                 className={linkSocialStyles.socials} 
                 whileHover={{ scale:1.1, y:-5}}
-                key={socials.id}
                 initial='hidden'
                 animate='visible'
                 variants={buttonTopScaleVariant}
