@@ -11,7 +11,6 @@ const LinkSocialMedia = () => {
             {socialMedia.map(socials => (
                 <motion.a href={socials.link} 
                 className={linkSocialStyles.socials} 
-                whileTap={{ scale:.9 }}
                 whileHover={{ scale:1.1, y:-5}}
                 key={socials.id}
                 initial='hidden'
