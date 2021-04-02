@@ -13,23 +13,23 @@
     width: 100%;
     border:none;
 
+    &:hover p, &:hover svg {
+        color:#FFF;
+    }
+
     p, svg{
         display:inline-block;
         color:$sand;
+        transition: color linear 250ms;
     }
     
     p {
-        font-size:1.1rem;
-        font-family:'Playfair Display', sans-serif;
-        text-decoration: underline;
-
-        &:hover {
-            text-decoration: none;
-        }
+        font-size:1.3rem;
+        font-family:$font-itim;
     }
     
     svg {
-        font-size:20px;
+        font-size:22px;
         margin-left:5px;
         margin-bottom:-6px;
     }
