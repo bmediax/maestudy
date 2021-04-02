@@ -5,7 +5,7 @@
     width:100%;
     padding:20px 0;
     color:#FFF;
-    background:$sand;
+    background:$quirk;
     font-size:1.2rem;
     font-family: 'Playfair Display', sans-serif;
     font-weight: 500;
@@ -16,7 +16,7 @@
     transition: background 200ms linear;
 
     &:hover {
-        background:lighten($sand, 5);
+        background:$sand;
     }
 
     &:last-child {
