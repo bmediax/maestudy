@@ -1,3 +1,3 @@
 import { createContext } from 'react'
 
-export const SocialMediaContext = createContext(null);
+export const SocialMediaContext = createContext([]);
