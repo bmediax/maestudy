@@ -5,23 +5,27 @@
     bottom:0;
     right:0;
     left:0;
-    height:70px;
-    line-height:70px;
+    // height:15%;
+    // line-height:15%;
+    padding:15px 0px;
     text-align:center;
     background:$forest;
+    width: 100%;
+    border:none;
 
     p, svg{
         display:inline-block;
         color:$sand;
     }
-
+    
     p {
-        font-size:1.4rem;
+        // font-size:1.1rem;
+        font-size:2.5vmax;
         font-family:'Poppins', sans-serif;
     }
-
+    
     svg {
-        font-size:30px;
-        margin-bottom:-7px;
+        font-size:25px;
+        margin-bottom:-6px;
     }
 }
