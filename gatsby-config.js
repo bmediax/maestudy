@@ -2,6 +2,7 @@ module.exports = {
   siteMetadata: {
     title: "MaeStudy",
     titleTemplate: "Mae Study",
+    siteUrl: 'https://maestudy.com',
     description:
       "I like hand-lettering in all type of medium (and hoarding art supply ☺️)",
     url: "https://maestudy.com", // No trailing slash allowed!
