@@ -18,6 +18,11 @@
     .profileSide {
         flex:2;
 
+        @include responsive('Mobile') {
+            margin-left:20px;
+            margin-right:15px;
+        }
+
         img {
             width:100%;
         }

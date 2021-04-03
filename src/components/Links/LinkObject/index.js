@@ -16,9 +16,9 @@ const LinkObject = ({title, link, icon, isPinned}) => {
                 className={linkObjectStyle.linkBtn}
                 style={{ background : isPinned ? variables.quirkColor : null }}>
                     { icon && 
-                    <span className={linkObjectStyle.linkIcon}>
+                    <motion.span drag="x" dragConstraints={{ left: 0, right: 300 }} initial={{ scale:0 }} animate={{ scale:1 }} transition={{ type: 'spring', damping:30, stiffness:150 }} className={linkObjectStyle.linkIcon}>
                         {icon}
-                    </span>}
+                    </motion.span>}
                     <span>{title}</span>
             </motion.a>
         </motion.div>

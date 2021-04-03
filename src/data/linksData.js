@@ -10,17 +10,10 @@ import { AiFillPushpin as Pin } from 'react-icons/ai'
 
 export const linksData = [
     {
-        title: 'Subscribe Now!',
+        title: 'Subscribe to my YT!',
         link: 'https://www.youtube.com/channel/UCbtfEYwfzigTidiqd6XDBcQ',
         isPinned: true,
         icon: <Pin />,
         id: 1
-    },
-    {
-        title: 'Subscribe Nows!',
-        link: 'https://www.youtube.com/channel/UCbtfEYwfzigTidiqd6XDBcQ',
-        isPinned: false,
-        icon: null,
-        id: 2
-    },
+    }
 ]
