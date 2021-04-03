@@ -1,7 +1,12 @@
 module.exports = {
   siteMetadata: {
-    title: "maestudy",
-    siteUrl: `https://maestudy.com`,
+    title: "MaeStudy",
+    titleTemplate: "Mae Study",
+    description:
+      "I like hand-lettering in all type of medium (and hoarding art supply ☺️)",
+    url: "https://maestudy.com", // No trailing slash allowed!
+    image: "/images/banner.png", // Path to your image you placed in the 'static' folder
+    twitterUsername: "@maestudy",
   },
   plugins: [
     "gatsby-plugin-sass",
