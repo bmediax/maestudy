@@ -11,7 +11,7 @@ const LinkModule = () => {
                 {linksData
                 .sort((pin, nopin) => nopin.isPinned - pin.isPinned)
                 .map(links => (
-                    <LinkObject title={links.title} key={links.id} link={links.link} icon={links.icon} />
+                    <LinkObject key={links.id} {...links} />
                 ))}
             </div>
         </LinksSection>

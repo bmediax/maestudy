@@ -17,7 +17,7 @@ export const linksData = [
         id: 1
     },
     {
-        title: 'Subscribe Now!',
+        title: 'Subscribe Nows!',
         link: 'https://www.youtube.com/channel/UCbtfEYwfzigTidiqd6XDBcQ',
         isPinned: false,
         icon: null,

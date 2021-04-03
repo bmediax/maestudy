@@ -12,14 +12,26 @@ $fontSize-body: 1.2rem;
 $nude:          #FEF2E8;
 // $sand:          #F7BBA9;
 $sand:          #F7BBA9;
-$quirk:         #f6a998;
+$quirk:         #F6A998;
+$light-quirk:   #FEBBAC;
 $crimsonBrown:  #B66A5F;
+$light-crimsonBrown:  #E99184;
 $brown:         #A16346;
 $forest:        #1E5062;
+$light-forest:  #375763;
 $black:         #1A1423;
 
 :export {
-    nude: $nude;
+    // Color Palette
+    nudeColor: $nude;
+    quirkColor: $quirk;
+    lightQuirkColor: $light-quirk;
+    crimsonBrownColor: $crimsonBrown;
+    lightCrimsonBrownColor: $light-crimsonBrown;
+    brownColor: $brown;
+    forestColor: $forest;
+    lightForestColor: $light-forest;
+    black: $black;
 }
 
 // Sizes

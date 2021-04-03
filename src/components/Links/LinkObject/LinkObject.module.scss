@@ -1,4 +1,4 @@
-@use '../../../styles/variables' as *;
+@use '../../../styles/variables.module' as *;
 
 .linkItemWrap {
     display:flex;
@@ -8,28 +8,21 @@
         margin-bottom:0;
     }
 
-    &:hover .linkIcon a {
-        color:#FFF;
-        background:$quirk
-    }
-
     &:hover .linkBtn {
         color:#FFF;
-        background:$quirk;
-        background:$sand;
-    }
-}
+        background:$crimsonBrown !important;
 
-.linkBtnWithIcon {
-    border-top-left-radius:0px !important;
-    border-bottom-left-radius:0px !important;
+        .linkIcon {
+            background:$light-crimsonBrown !important;
+        }
+    }
 }
 
 .linkBtn {
+    position:relative;
     width:100%;
     padding:20px 0px;
     color:#FFF;
-    // background:$quirk;
     background:$sand;
     box-sizing: content-box;
     font-size:$fontSize-body;
@@ -37,29 +30,19 @@
     text-align:center;
     text-decoration:none;
     @include objectRadius('rounded-btn');
-    transition: background 200ms linear;
+    transition: background 250ms linear;
 }
 
 .linkIcon {
-    flex:1;
+    position:absolute;
+    left:5px;
+    top:4.5px;
+    height:50px;
+    line-height:55px;
+    width:50px;
+    background:$light-quirk;
+    @include objectRadius('rounded-btn');
     box-sizing: content-box;
-    
-    a {
-        display:flex;
-        align-items: center;
-        justify-content: center;
-        height:59px;
-        width:59px;
-        border-top-left-radius:50%;
-        border-bottom-left-radius:50%;
-        background:rgba($sand, .2);
-        text-decoration: none;
-        font-size:1.5rem;
-        color:$quirk;
-        transition: background linear 250ms, color linear 250ms;
-
-        @include responsive('Mobile') {
-            background:red !important;
-        }
-    }
+    box-shadow:5px 15px 20px rgba(0, 0, 0, 0.1);   
+    transition: background 250ms linear;
 }
