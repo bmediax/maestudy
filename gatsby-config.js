@@ -34,9 +34,7 @@ module.exports = {
       options: {
         repositoryName: 'maestudy',
         schemas: {
-           homepage: require("./custom_types/homepage.json"),
-           navigation: require("./custom_types/navigation.json"),
-           page: require("./custom_types/page.json"),
+           links: require("./custom_types/links.json"),
         },
       },
     },

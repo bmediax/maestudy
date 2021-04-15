@@ -2,16 +2,20 @@ import React from 'react'
 import LinksSection from '../../../layout/LinksSection'
 import LinkObject from '../LinkObject'
 // import * as linkModuleStyle from './linkModule.module.scss'
-import { linksData } from '../../../data/linksData'
+// import { linksData } from '../../../data/linksData'
 
-const LinkModule = () => {
+const LinkModule = ({ linksModule }) => {
     return (
         <LinksSection>
             <div>
-                {linksData
-                .sort((pin, nopin) => nopin.isPinned - pin.isPinned)
-                .map(links => (
-                    <LinkObject key={links.id} {...links} />
+                {linksModule
+                .sort((pin, nopin) => nopin.is_pinned - pin.is_pinned)
+                .map((links, index) => (
+                    <LinkObject key={index} 
+                        isPinned={links.is_pinned}
+                        linksTitle={links.links_title}
+                        linksUrl={links.links_url}
+                        />
                 ))}
             </div>
         </LinksSection>

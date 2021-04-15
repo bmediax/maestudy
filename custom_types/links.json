@@ -1,0 +1,79 @@
+{
+  "Main" : {
+    "banner" : {
+      "type" : "Image",
+      "config" : {
+        "constraint" : {
+          "width" : 1100,
+          "height" : 266
+        },
+        "thumbnails" : [ ],
+        "label" : "Banner"
+      }
+    },
+    "profile_image" : {
+      "type" : "Image",
+      "config" : {
+        "constraint" : {
+          "width" : 2000,
+          "height" : 2000
+        },
+        "thumbnails" : [ ],
+        "label" : "Profile Image"
+      }
+    },
+    "links_module" : {
+      "type" : "Group",
+      "config" : {
+        "fields" : {
+          "links_title" : {
+            "type" : "StructuredText",
+            "config" : {
+              "single" : "heading1",
+              "label" : "Links Title",
+              "placeholder" : "Link Title"
+            }
+          },
+          "links_url" : {
+            "type" : "Link",
+            "config" : {
+              "label" : "Links Url"
+            }
+          },
+          "is_pinned" : {
+            "type" : "Boolean",
+            "config" : {
+              "default_value" : false,
+              "label" : "Pinned?"
+            }
+          }
+        },
+        "label" : "Links Module"
+      }
+    },
+    "bottom_module" : {
+      "type" : "Group",
+      "config" : {
+        "repeat" : false,
+        "fields" : {
+          "title" : {
+            "type" : "StructuredText",
+            "config" : {
+              "multi" : "strong, em",
+              "label" : "Title",
+              "placeholder" : "#StopAsianHate"
+            }
+          },
+          "url" : {
+            "type" : "Link",
+            "config" : {
+              "allowTargetBlank" : true,
+              "label" : "Url"
+            }
+          }
+        },
+        "label" : "Bottom Module"
+      }
+    }
+  }
+}
